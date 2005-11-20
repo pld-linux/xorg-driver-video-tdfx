@@ -1,23 +1,28 @@
 Summary:	X.org video driver for 3Dfx video adapters
 Summary(pl):	Sterownik obrazu X.org dla kart graficznych 3Dfx
 Name:		xorg-driver-video-tdfx
-Version:	1.1.0.1
+Version:	1.1.1
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/driver/xf86-video-tdfx-%{version}.tar.bz2
-# Source0-md5:	7b8f068e89337c24c81817a197e0f0bd
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/driver/xf86-video-tdfx-%{version}.tar.bz2
+# Source0-md5:	ad0bb8d9a193509afa332ba4fa78ad36
 URL:		http://xorg.freedesktop.org/
+BuildRequires:	Mesa-libGL-devel
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	libdrm-devel
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	xorg-proto-fontsproto-devel
+BuildRequires:	xorg-proto-randrproto-devel
+BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-videoproto-devel
+BuildRequires:	xorg-proto-xextproto-devel
 BuildRequires:	xorg-proto-xf86dgaproto-devel
 BuildRequires:	xorg-proto-xf86driproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.1
-BuildRequires:	xorg-xserver-server-devel
+BuildRequires:	xorg-xserver-server-devel >= 0.99.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -56,5 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc ChangeLog
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/tdfx_drv.so
 %{_mandir}/man4/tdfx.4x*
