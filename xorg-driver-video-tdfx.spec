@@ -1,12 +1,12 @@
 Summary:	X.org video driver for 3Dfx video adapters
 Summary(pl):	Sterownik obrazu X.org dla kart graficznych 3Dfx
 Name:		xorg-driver-video-tdfx
-Version:	1.2.2
+Version:	1.3.0
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-tdfx-%{version}.tar.bz2
-# Source0-md5:	68568ca1402d07046b08f82679aefb87
+# Source0-md5:	04c49acb5c5dbde14eabd32d06df6e73
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	Mesa-libGL-devel
 BuildRequires:	autoconf >= 2.57
