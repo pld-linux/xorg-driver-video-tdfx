@@ -1,5 +1,5 @@
 Summary:	X.org video driver for 3Dfx video adapters
-Summary(pl.UTF-8):   Sterownik obrazu X.org dla kart graficznych 3Dfx
+Summary(pl.UTF-8):	Sterownik obrazu X.org dla kart graficznych 3Dfx
 Name:		xorg-driver-video-tdfx
 Version:	1.3.0
 Release:	0.1
