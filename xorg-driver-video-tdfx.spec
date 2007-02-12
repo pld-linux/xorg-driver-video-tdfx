@@ -1,5 +1,5 @@
 Summary:	X.org video driver for 3Dfx video adapters
-Summary(pl):	Sterownik obrazu X.org dla kart graficznych 3Dfx
+Summary(pl.UTF-8):   Sterownik obrazu X.org dla kart graficznych 3Dfx
 Name:		xorg-driver-video-tdfx
 Version:	1.3.0
 Release:	0.1
@@ -30,8 +30,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 X.org video driver for 3Dfx video adapters. It supports Voodoo
 Banshee, Voodoo3, Voodoo4 and Voodoo5 cards.
 
-%description -l pl
-Sterownik obrazu X.org dla kart graficznych 3Dfx. Obs≥uguje karty
+%description -l pl.UTF-8
+Sterownik obrazu X.org dla kart graficznych 3Dfx. Obs≈Çuguje karty
 Voodoo Banshee, Voodoo3, Voodoo4 i Voodoo5.
 
 %prep
