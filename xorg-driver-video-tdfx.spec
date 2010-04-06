@@ -14,8 +14,10 @@ BuildRequires:	automake
 BuildRequires:	libdrm-devel >= 2.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	rpmbuild(macros) >= 1.389
 BuildRequires:	xorg-lib-libpciaccess-devel >= 0.8.0
 BuildRequires:	xorg-proto-fontsproto-devel
+BuildRequires:	xorg-proto-glproto-devel
 BuildRequires:	xorg-proto-randrproto-devel
 BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-videoproto-devel
@@ -24,7 +26,6 @@ BuildRequires:	xorg-proto-xf86dgaproto-devel
 BuildRequires:	xorg-proto-xf86driproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRequires:	xorg-xserver-server-devel >= 1.0.99.901
-BuildRequires:  rpmbuild(macros) >= 1.389
 %requires_xorg_xserver_videodrv
 Requires:	xorg-xserver-libdri >= 1.0.99.901
 Requires:	xorg-xserver-libglx >= 1.0.99.901
