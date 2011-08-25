@@ -2,7 +2,7 @@ Summary:	X.org video driver for 3Dfx video adapters
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla kart graficznych 3Dfx
 Name:		xorg-driver-video-tdfx
 Version:	1.4.3
-Release:	6
+Release:	7
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-tdfx-%{version}.tar.bz2
@@ -30,6 +30,7 @@ BuildRequires:	xorg-xserver-server-devel >= 1.0.99.901
 Requires:	xorg-xserver-libdri >= 1.0.99.901
 Requires:	xorg-xserver-libglx >= 1.0.99.901
 Requires:	xorg-xserver-server >= 1.0.99.901
+Provides:	xorg-driver-video
 Obsoletes:	X11-driver-tdfx < 1:7.0.0
 Obsoletes:	XFree86-3dfx
 Obsoletes:	XFree86-driver-tdfx < 1:7.0.0
