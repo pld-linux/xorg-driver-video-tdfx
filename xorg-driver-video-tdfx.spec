@@ -2,11 +2,12 @@ Summary:	X.org video driver for 3Dfx video adapters
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla kart graficznych 3Dfx
 Name:		xorg-driver-video-tdfx
 Version:	1.4.5
-Release:	3
+Release:	4
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-tdfx-%{version}.tar.bz2
 # Source0-md5:	1b4a7815a604b3764900b520336a75ea
+Patch0:		build.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	Mesa-libGL-devel
 BuildRequires:	autoconf >= 2.60
@@ -46,6 +47,7 @@ Voodoo Banshee, Voodoo3, Voodoo4 i Voodoo5.
 
 %prep
 %setup -q -n xf86-video-tdfx-%{version}
+%patch0 -p1
 
 %build
 %{__libtoolize}
